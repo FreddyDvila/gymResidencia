@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    {% load static %}
+    <title>Gym Zero Gravity</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <!--=============================================================================================== -->
+
+    <!--Index page css start here-->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet"> -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    
+    <!--Index page css ends here-->
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+    <style>
+        {% block css %} {% endblock %}
+   </style>
+
+
+</head>
+
+<nav class="navbar navbar-expand-md navbar-fixed-top bg-dark justify-content-center">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#abc"><span
+                class="navbar-toggler-icon"></span></button>
+    
+        <!-- <a href="" class="navbar-brand navbar-collapse collapse"></a> -->
+        <div class="collapse navbar-collapse navbar-right">
+            
+        <ul class="nav navbar-nav">
+            <li class="scroll active"><a href="/">Home</a></li>
+            <li class="scroll"><a href="/about">Sobre nosotros</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav">
+            {% comment %} {% if request.user.is_staff %} {% endcomment %}
+            {% comment %} <li class="scroll dropdown active">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Consultas</a>
+                <div class="dropdown-menu nav-link">
+                    <a href="/add_enquiry" class="dropdown-item">Consultas</a>
+                    <a href="/view_enquiry" class="dropdown-item">Ver consultas</a>
+                </div>
+            </li> {% endcomment %}
+            <li class="scroll dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Plan</a>
+                <div class="dropdown-menu nav-link">
+                    <a href="/add_plan" class="dropdown-item">Agregar Plan</a>
+                    <a href="/view_plan" class="dropdown-item">Ver Plan</a>
+                </div>
+            </li>
+            {% comment %} <li class="scroll dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Equipo</a>
+                <div class="dropdown-menu nav-link">
+                    <a href="/add_equipment" class="dropdown-item">Agregar Equipo</a>
+                    <a href="/view_equipment" class="dropdown-item">Ver Equipo</a>
+                </div>
+            </li> {% endcomment %}
+            <li class="scroll dropdown">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Cliente</a>
+                <div class="dropdown-menu nav-link">
+                    <a href="/add_member" class="dropdown-item">Agregar Clienter</a>
+                    <a href="/view_member" class="dropdown-item">Ver Cliente</a>
+                </div>
+            </li>
+            {% comment %} <li class="scroll"><a href="/logout">Logout</a></li> {% endcomment %}
+            {% comment %} {% endif %} {% endcomment %}
+        </ul>
+
+           
+        </div>
+    </div>
+    <!--/.container-->
+</nav>
+
+<body>
+    {% block body %}
+
+    {% endblock %}
+</body>
+
+{% block footer%}
+{% endblock %}
+<!--/#footer-->
+
+<!--index page js link start here-->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/mousescroll.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'js/jquery.inview.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/custom-scripts.js' %}"></script>
+<!--index page js link ends here-->
+
+
+<!--bootstrap js cdn start here-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--bootstrap js cdn start here-->
+</html>

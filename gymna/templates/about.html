@@ -1,0 +1,39 @@
+{% extends 'navigation.html'%}
+{% load static %}
+
+{% block body %}
+
+<div class="container">
+    <h2 class="text-center text-primary font-weight-bold mt-5">About Us</h2>
+    <div class="row mt-5">
+        <div class="col-sm-4 text-center">
+            <img src="{% static 'images/about1.jpg' %}" width="500" height="400" class="img-responsive">
+        </div>
+        <div class="col-sm-8 text-center mt-5">
+            <b> Objectivo de Gym Zero Gravity<br>
+                Cuidar tú salud, estar en forma y perder esos “kilos de más” son los objetivos de la gran mayoría de personas que acuden a un gimnasio y, “si puede ser en cuestión de semanas, mucho mejor”</b>
+        </div>
+    </div>
+</div>
+{% endblock%}
+{% block css %}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+{% endblock %}
+{% block footer %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-white">Copyright @2022 | Gym Zero Gravity | Tlapa de Comonfort</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock%}

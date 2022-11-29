@@ -1,0 +1,153 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+<div id="home">
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#main-slider-->
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">¿Quienes Somos?</h2>
+                <p class="wow fadeInDown">Un gimnasio responsable comprometidos con el cliente que nos visita, contamos con una distinguida higiene dentro de nuestro espacio</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="{% static 'images/home.png' %}" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">¿Qué haras?</h3>
+                    <p>Te ayudaremos a construir el cuerpo de tus sueños para que puedas mostrarcelo a los demás,
+                        podemos ayudarte a tener un cuerpo sano
+                    </p>
+                    <ul class="listarrow">
+                        <li><i class="fa fa-angle-double-right"></i>Aerobic</li>
+                        <li><i class="fa fa-angle-double-right"></i>Cardio</li>
+                        <li><i class="fa fa-angle-double-right"></i>Abdomen</li>
+                        <li><i class="fa fa-angle-double-right"></i>Brazos</li>
+                        <li><i class="fa fa-angle-double-right"></i>Piernas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#about-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Planes</h2>
+                <p class="wow fadeInDown">Ofrecemos planes de acuerdo a tus posibilidades</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-success">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $20
+                                    </span>
+                                    <span class="duration">
+                                        UN DÍA
+                                    </span>
+                                </div>
+                                <div class="plan-name">
+                                    DIARIO
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">No lo pienses más!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-primary">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $150
+                                    </span>
+                                    <span class="duration">
+                                        15 DÍAS
+                                    </span>
+                                </div>
+                                <div class="plan-name">
+                                    QUINCENAL
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">No lo pienses más!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-danger">
+                    <div class="wow zoomIn" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $250
+                                    </span>
+                                    <span class="duration">
+                                        30 DIAS
+                                    </span>
+                                </div>
+                                <div class="plan-name">
+                                    MENSUALIDAD
+                                </div>
+                            </li>
+                           
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">No lo pienses más!</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 bg-warning">
+                    <div class="wow zoomIn" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $500
+                                    </span>
+                                    <span class="duration">
+                                        2 meses
+                                    </span>
+                                </div>
+                                <div class="plan-name">
+                                    DOBLE MENSUALIDAD
+                                </div>
+                            </li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">No lo pienses más!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </section>
+    
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-white">Copyright @2022 | Gym Management System Zero Gravity| Tlapa de Comonfort</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
